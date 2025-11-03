@@ -7,7 +7,7 @@ title: Smartphone - EDC Essential
 
 {% badge "Always" %}
 
-![My smartphone](../../images/phone.jpg)
+<p><img src="../../images/phone.jpg" alt="My smartphone" class="item-photo"></p>
 
 My smartphone is my daily command center — communication, navigation, payments, and camera all in one pocket-sized device.
 

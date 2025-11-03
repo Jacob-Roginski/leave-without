@@ -202,6 +202,17 @@ main img {
     box-shadow: var(--card-shadow);
 }
 
+/* Specific smaller image for the phone page */
+.item-photo {
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+}
+
 main h1 {
     font-size: 3rem;
     color: var(--primary-color);
