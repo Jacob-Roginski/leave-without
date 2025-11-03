@@ -7,16 +7,51 @@ title: 11ty Boilerplate
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
-  <link rel="stylesheet" href="/styles/screen.css">
+  <title>{{ title }} | My EDC Essentials</title>
+  <link rel="stylesheet" href="styles/screen.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
-    </ul>
-  </nav>
+  <header class="site-header">
+    <div class="header-content">
+      <div class="logo">
+        <a href="/" title="Home">
+          <i class="fas fa-compass"></i>
+          <span>EDC Essentials</span>
+        </a>
+      </div>
+      <nav aria-label="Primary" role="navigation">
+        <ul>
+          <li><a href="/" title="Home"><i class="fas fa-home" aria-hidden="true"></i> <span class="visually-hidden">Home</span></a></li>
+          <li><a href="/edc/phone" title="Phone"><i class="fas fa-mobile-alt" aria-hidden="true"></i> <span class="nav-label">Phone</span></a></li>
+          <li><a href="/edc/skateboard" title="Skateboard"><i class="fas fa-bolt" aria-hidden="true"></i> <span class="nav-label">Skateboard</span></a></li>
+          <li><a href="/edc/keys-wallet" title="Keys and Wallet"><i class="fas fa-key" aria-hidden="true"></i> <span class="nav-label">Keys / Wallet</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
     {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p><i class="fas fa-compass"></i> EDC Essentials</p>
+        <p>My everyday carry items that make life better</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="/edc/phone">Phone</a></li>
+          <li><a href="/edc/skateboard">Skateboard</a></li>
+          <li><a href="/edc/keys-wallet">Keys / Wallet</a></li>
+        </ul>
+      </div>
+      <div class="footer-credit">
+        <p>&copy; {% currentYear %} EDC Essentials. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
